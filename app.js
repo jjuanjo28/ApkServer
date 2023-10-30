@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import {PORT} from "./src/config.js
+import {PORT} from "./src/config.js"
 
 // importo DB
 import db from "./database/db.js"
