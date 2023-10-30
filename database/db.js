@@ -18,4 +18,11 @@ const db = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   port: DB_PORT
  });
 
+try {
+    await db.authenticate()
+    console.log("coneccion exitosa a DB")
+} catch (error) {
+    console.log(`el error de coneccion es: ${error}`)
+}
+
 export default db;
