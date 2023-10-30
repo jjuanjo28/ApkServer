@@ -17,7 +17,7 @@ app.use(express.json())
 app.use("/", routes)
 
 try {
-    db.authenticate()
+    await db.authenticate()
     console.log("coneccion exitosa a DB")
 } catch (error) {
     console.log(`el error de coneccion es: ${error}`)
