@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-
+import {PORT} from "./src/config.js
 
 // importo DB
 import db from "./database/db.js"
@@ -23,7 +23,7 @@ try {
     console.log(`el error de coneccion es: ${error}`)
 }
 
-app.listen(8100, ()=>{
-    console.log("Server Up on running in http://localhost:8100/")
+app.listen(PORT, ()=>{
+    console.log(`Server Up on running in http://localhost:${PORT}/`)
  
 })
