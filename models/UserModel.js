@@ -8,8 +8,8 @@ const UserModel = db.define("user", {
     email: {type: DataTypes.STRING},
     usuario: {type: DataTypes.STRING},
     password: {type: DataTypes.STRING},
-    createdAt: {type: DataTypes.STRING},
-    updatedAt: {type: DataTypes.STRING},
+    createdAt: {type: DataTypes.DATE},
+    updatedAt: {type: DataTypes.DATE},
    
     
 })
