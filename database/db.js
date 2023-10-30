@@ -15,6 +15,7 @@ console.log("DB_PORT:", DB_PORT)
 const db = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   host: DB_HOST,
   dialect: "mysql",
+  port: DB_PORT
  });
 
 export default db;
